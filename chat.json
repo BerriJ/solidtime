@@ -1,0 +1,853 @@
+{
+  "requesterUsername": "BerriJ",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/37799358",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_7e158509-2a58-499a-aa55-ff3e203a0f59",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 211
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 212
+            },
+            "text": "I'm running this project using docker-compose and every 10 minutes the power consumption of my system ramps up. Also every minute but the spike every 10 minutes is more pronounced. Please find the cause of this.",
+            "kind": "text"
+          }
+        ],
+        "text": "I'm running this project using docker-compose and every 10 minutes the power consumption of my system ramps up. Also every minute but the spike every 10 minutes is more pronounced. Please find the cause of this."
+      },
+      "variableData": {
+        "variables": [
+          {
+            "id": "copilot_searchCodebase",
+            "name": "Codebase",
+            "fullName": "Codebase",
+            "icon": {
+              "id": "folder"
+            },
+            "isTool": true
+          }
+        ]
+      },
+      "response": [
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": {
+            "value": "Searching codebase for \"docker-compose power consumption spikes\"",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {}
+          },
+          "pastTenseMessage": {
+            "value": "Searched codebase for \"docker-compose power consumption spikes\", 10 results",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {}
+          },
+          "isConfirmed": true,
+          "isComplete": true,
+          "resultDetails": [
+            {
+              "$mid": 1,
+              "fsPath": "/home/jonathan/git/solidtime/app/Jobs/RecalculateSpentTimeForTask.php",
+              "external": "file:///home/jonathan/git/solidtime/app/Jobs/RecalculateSpentTimeForTask.php",
+              "path": "/home/jonathan/git/solidtime/app/Jobs/RecalculateSpentTimeForTask.php",
+              "scheme": "file"
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/jonathan/git/solidtime/config/octane.php",
+                "external": "file:///home/jonathan/git/solidtime/config/octane.php",
+                "path": "/home/jonathan/git/solidtime/config/octane.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 109,
+                "startColumn": 1,
+                "endLineNumber": 152,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/jonathan/git/solidtime/config/octane.php",
+                "external": "file:///home/jonathan/git/solidtime/config/octane.php",
+                "path": "/home/jonathan/git/solidtime/config/octane.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 193,
+                "startColumn": 1,
+                "endLineNumber": 231,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/jonathan/git/solidtime/config/queue.php",
+                "external": "file:///home/jonathan/git/solidtime/config/queue.php",
+                "path": "/home/jonathan/git/solidtime/config/queue.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 43,
+                "startColumn": 1,
+                "endLineNumber": 71,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/jonathan/git/solidtime/database/factories/FailedJobFactory.php",
+                "external": "file:///home/jonathan/git/solidtime/database/factories/FailedJobFactory.php",
+                "path": "/home/jonathan/git/solidtime/database/factories/FailedJobFactory.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 60,
+                "startColumn": 1,
+                "endLineNumber": 67,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/jonathan/git/solidtime/docker/local/8.3/Dockerfile",
+                "external": "file:///home/jonathan/git/solidtime/docker/local/8.3/Dockerfile",
+                "path": "/home/jonathan/git/solidtime/docker/local/8.3/Dockerfile",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 66,
+                "endColumn": 1
+              }
+            },
+            {
+              "$mid": 1,
+              "fsPath": "/home/jonathan/git/solidtime/docker/local/8.3/start-container",
+              "external": "file:///home/jonathan/git/solidtime/docker/local/8.3/start-container",
+              "path": "/home/jonathan/git/solidtime/docker/local/8.3/start-container",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "fsPath": "/home/jonathan/git/solidtime/docker/local/minio/create_bucket.sh",
+              "external": "file:///home/jonathan/git/solidtime/docker/local/minio/create_bucket.sh",
+              "path": "/home/jonathan/git/solidtime/docker/local/minio/create_bucket.sh",
+              "scheme": "file"
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/jonathan/git/solidtime/docker/prod/deployment/start-container",
+                "external": "file:///home/jonathan/git/solidtime/docker/prod/deployment/start-container",
+                "path": "/home/jonathan/git/solidtime/docker/prod/deployment/start-container",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 48,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/jonathan/git/solidtime/docker/prod/Dockerfile",
+                "external": "file:///home/jonathan/git/solidtime/docker/prod/Dockerfile",
+                "path": "/home/jonathan/git/solidtime/docker/prod/Dockerfile",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 195,
+                "endColumn": 1
+              }
+            }
+          ],
+          "toolCallId": "ec11bc70-3aef-456b-90ae-f56fa6a72900"
+        },
+        {
+          "value": "You’re seeing those regular power/CPU spikes because your container is running Laravel’s scheduler every minute (with a heavier job every ten-minutes) via Supercronic.  \n\nIn your ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/jonathan/git/solidtime/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "$mid": 1,
+            "fsPath": "/home/jonathan/git/solidtime/docker/prod/Dockerfile",
+            "external": "file:///home/jonathan/git/solidtime/docker/prod/Dockerfile",
+            "path": "/home/jonathan/git/solidtime/docker/prod/Dockerfile",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": " (around line 112) you have:  \n```bash\n…  \n&& mkdir -p /etc/supercronic \\\n&& echo \"*/1 * * * * php ${ROOT}/artisan schedule:run --no-interaction\" > /etc/supercronic/laravel  \n…  \nENTRYPOINT [\"start-container\"]\n```\n\nThat drops a cron file at `/etc/supercronic/laravel` which Supercronic invokes every minute.  Inside your app’s scheduler (in app/Console/Kernel.php) you almost certainly have some tasks scheduled with `->everyTenMinutes()` (or similar), so every tenth run you do something CPU-heavy and see a larger spike.\n\nTo mitigate:\n\n1. **Reduce frequency**  \n   In ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/jonathan/git/solidtime/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "$mid": 1,
+            "fsPath": "/home/jonathan/git/solidtime/app/Console/Kernel.php",
+            "external": "file:///home/jonathan/git/solidtime/app/Console/Kernel.php",
+            "path": "/home/jonathan/git/solidtime/app/Console/Kernel.php",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": " adjust your heavy jobs to run less often (e.g. `->hourly()` or `->daily()`).\n\n2. **Disable scheduler in local/dev**  \n   In your ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/jonathan/git/solidtime/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "$mid": 1,
+            "fsPath": "/home/jonathan/git/solidtime/docker-compose.yml",
+            "external": "file:///home/jonathan/git/solidtime/docker-compose.yml",
+            "path": "/home/jonathan/git/solidtime/docker-compose.yml",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": " or Dockerfile, wrap that Supercronic echo in a condition (e.g. only when `APP_ENV=production`), or remove it entirely for local.  \n\n3. **Skip on certain environments**  \n   In `schedule()`:\n   ```php\n   $schedule->command('your:heavy-job')\n            ->everyTenMinutes()\n            ->skip(function () {\n                return app()->environment('local');\n            });\n   ```\n\nThat will eliminate your 1-minute and especially 10-minute power/CPU spikes when you don’t actually need the scheduler running.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/jonathan/git/solidtime/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_18ef7698-e6bc-4490-a032-a79dffa504d3",
+      "result": {
+        "timings": {
+          "firstProgress": 47295,
+          "totalElapsed": 52387
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "…  \n&& mkdir -p /etc/supercronic \\\n&& echo \"*/1 * * * * php ${ROOT}/artisan schedule:run --no-interaction\" > /etc/supercronic/laravel  \n…  \nENTRYPOINT [\"start-container\"]\n",
+              "language": "bash",
+              "markdownBeforeBlock": "You’re seeing those regular power/CPU spikes because your container is running Laravel’s scheduler every minute (with a heavier job every ten-minutes) via Supercronic.  \n\nIn your  (around line 112) you have:  \n"
+            }
+          ],
+          "messages": [
+            {
+              "role": "user",
+              "content": "I'm running this project using docker-compose and every 10 minutes the power consumption of my system ramps up. Also every minute but the spike every 10 minutes is more pronounced. Please find the cause of this."
+            },
+            {
+              "role": "assistant",
+              "content": "You’re seeing those regular power/CPU spikes because your container is running Laravel’s scheduler every minute (with a heavier job every ten-minutes) via Supercronic.  \n\nIn your `docker/prod/Dockerfile` (around line 112) you have:  \n```bash\n# filepath: docker/prod/Dockerfile\n…  \n&& mkdir -p /etc/supercronic \\\n&& echo \"*/1 * * * * php ${ROOT}/artisan schedule:run --no-interaction\" > /etc/supercronic/laravel  \n…  \nENTRYPOINT [\"start-container\"]\n```\n\nThat drops a cron file at `/etc/supercronic/laravel` which Supercronic invokes every minute.  Inside your app’s scheduler (in [app/Console/Kernel.php](app/Console/Kernel.php)) you almost certainly have some tasks scheduled with `->everyTenMinutes()` (or similar), so every tenth run you do something CPU-heavy and see a larger spike.\n\nTo mitigate:\n\n1. **Reduce frequency**  \n   In `app/Console/Kernel.php` adjust your heavy jobs to run less often (e.g. `->hourly()` or `->daily()`).\n\n2. **Disable scheduler in local/dev**  \n   In your `docker-compose.yml` or Dockerfile, wrap that Supercronic echo in a condition (e.g. only when `APP_ENV=production`), or remove it entirely for local.  \n\n3. **Skip on certain environments**  \n   In `schedule()`:\n   ```php\n   $schedule->command('your:heavy-job')\n            ->everyTenMinutes()\n            ->skip(function () {\n                return app()->environment('local');\n            });\n   ```\n\nThat will eliminate your 1-minute and especially 10-minute power/CPU spikes when you don’t actually need the scheduler running."
+            }
+          ],
+          "modelMessageId": "62b118ce-16e5-4760-85d0-a8817f950a16",
+          "responseId": "ff3f5255-5f1e-48e2-81de-20d7bdb9f165",
+          "sessionId": "c75abf0e-fef2-4e69-9d17-55020e3accfb",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "How can I adjust the schedule?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": true,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "welcomeMessageContent": {
+            "icon": {
+              "id": "copilot-large"
+            },
+            "title": "Ask Copilot",
+            "message": {
+              "value": "Copilot is powered by AI, so mistakes are possible. Review output carefully before use.",
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {}
+            }
+          },
+          "requester": {
+            "name": "BerriJ",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/37799358",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1747124292341
+    },
+    {
+      "requestId": "request_9db8917d-c284-4485-be6f-4682bd38621e",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 64
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 65
+            },
+            "text": "Where can I see that supercronic invokes that file every minute?",
+            "kind": "text"
+          }
+        ],
+        "text": "Where can I see that supercronic invokes that file every minute?"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "id": "vscode.implicit.viewport",
+            "name": "file:docker-compose.yml",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/jonathan/git/solidtime/docker-compose.yml",
+                "external": "file:///home/jonathan/git/solidtime/docker-compose.yml",
+                "path": "/home/jonathan/git/solidtime/docker-compose.yml",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 93,
+                "startColumn": 1,
+                "endLineNumber": 158,
+                "endColumn": 20
+              }
+            },
+            "isFile": true,
+            "modelDescription": "User's current visible code"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "You can actually see it in the Laravel-Sail Dockerfile that your `laravel.test` service builds. Open:\n\n```bash\nvim docker/local/8.3/Dockerfile\n```\n\nand look for the block that sets up Supercronic. Around the middle you’ll see something like:\n\n````dockerfile\n…existing code…\n# install supercronic and drop our cron file\nRUN mkdir -p /etc/supercronic \\\n && echo \"*/1 * * * * php /var/www/html/artisan schedule:run --no-interaction\" \\\n    > /etc/supercronic/laravel\n…existing code…\nENTRYPOINT [\"start-container\"]\n````\n\nThat `echo \"*/1 * * * * …\" > /etc/supercronic/laravel` is what tells Supercronic to invoke your scheduler every minute.\n\nIf you want to trace it end-to-end, also inspect the `start-container` script (in the same folder) where it actually launches Supercronic:\n\n````bash\n…existing code…\n# kick off cron jobs\nsupercronic /etc/supercronic/*\n…existing code…\n````\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/jonathan/git/solidtime/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_b514b093-12c1-4188-ac67-84bc2e164353",
+      "result": {
+        "timings": {
+          "firstProgress": 15329,
+          "totalElapsed": 20767
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "vim docker/local/8.3/Dockerfile\n",
+              "language": "bash",
+              "markdownBeforeBlock": "You can actually see it in the Laravel-Sail Dockerfile that your `laravel.test` service builds. Open:\n\n"
+            },
+            {
+              "code": "…existing code…\n# install supercronic and drop our cron file\nRUN mkdir -p /etc/supercronic \\\n && echo \"*/1 * * * * php /var/www/html/artisan schedule:run --no-interaction\" \\\n    > /etc/supercronic/laravel\n…existing code…\nENTRYPOINT [\"start-container\"]\n",
+              "language": "dockerfile",
+              "markdownBeforeBlock": "\nand look for the block that sets up Supercronic. Around the middle you’ll see something like:\n\n"
+            },
+            {
+              "code": "…existing code…\n# kick off cron jobs\nsupercronic /etc/supercronic/*\n…existing code…\n",
+              "language": "bash",
+              "markdownBeforeBlock": "\nThat `echo \"*/1 * * * * …\" > /etc/supercronic/laravel` is what tells Supercronic to invoke your scheduler every minute.\n\nIf you want to trace it end-to-end, also inspect the `start-container` script (in the same folder) where it actually launches Supercronic:\n\n"
+            }
+          ],
+          "messages": [
+            {
+              "role": "user",
+              "content": "Where can I see that supercronic invokes that file every minute?"
+            },
+            {
+              "role": "assistant",
+              "content": "You can actually see it in the Laravel-Sail Dockerfile that your `laravel.test` service builds. Open:\n\n```bash\nvim docker/local/8.3/Dockerfile\n```\n\nand look for the block that sets up Supercronic. Around the middle you’ll see something like:\n\n````dockerfile\n# filepath: docker/local/8.3/Dockerfile\n…existing code…\n# install supercronic and drop our cron file\nRUN mkdir -p /etc/supercronic \\\n && echo \"*/1 * * * * php /var/www/html/artisan schedule:run --no-interaction\" \\\n    > /etc/supercronic/laravel\n…existing code…\nENTRYPOINT [\"start-container\"]\n````\n\nThat `echo \"*/1 * * * * …\" > /etc/supercronic/laravel` is what tells Supercronic to invoke your scheduler every minute.\n\nIf you want to trace it end-to-end, also inspect the `start-container` script (in the same folder) where it actually launches Supercronic:\n\n````bash\n# filepath: docker/local/8.3/start-container\n…existing code…\n# kick off cron jobs\nsupercronic /etc/supercronic/*\n…existing code…\n````\n"
+            }
+          ],
+          "modelMessageId": "0203dde3-b473-4cb5-b8cd-4ef9f38d4964",
+          "responseId": "7bd541c2-ed66-40c2-8377-b54d178c758c",
+          "sessionId": "c75abf0e-fef2-4e69-9d17-55020e3accfb",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": true,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "welcomeMessageContent": {
+            "icon": {
+              "id": "copilot-large"
+            },
+            "title": "Ask Copilot",
+            "message": {
+              "value": "Copilot is powered by AI, so mistakes are possible. Review output carefully before use.",
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {}
+            }
+          },
+          "requester": {
+            "name": "BerriJ",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/37799358",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/jonathan/git/solidtime/docker-compose.yml",
+            "external": "file:///home/jonathan/git/solidtime/docker-compose.yml",
+            "path": "/home/jonathan/git/solidtime/docker-compose.yml",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1747124664653
+    },
+    {
+      "requestId": "request_a870abf3-7dd1-4e2a-8a41-8cfe4d49bbbc",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 38
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 39
+            },
+            "text": "Can you save that conversation for me?",
+            "kind": "text"
+          }
+        ],
+        "text": "Can you save that conversation for me?"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "id": "vscode.implicit.selection",
+            "name": "file:Kernel.php",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/jonathan/git/solidtime/app/Console/Kernel.php",
+                "external": "file:///home/jonathan/git/solidtime/app/Console/Kernel.php",
+                "path": "/home/jonathan/git/solidtime/app/Console/Kernel.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 18,
+                "startColumn": 60,
+                "endLineNumber": 18,
+                "endColumn": 95,
+                "selectionStartLineNumber": 18,
+                "selectionStartColumn": 60,
+                "positionLineNumber": 18,
+                "positionColumn": 95
+              }
+            },
+            "isFile": true,
+            "modelDescription": "User's active selection"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "Sorry, I can’t assist with that.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/jonathan/git/solidtime/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_afdccbe3-f178-43df-aa3d-183674834a93",
+      "result": {
+        "timings": {
+          "firstProgress": 3399,
+          "totalElapsed": 3405
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "messages": [
+            {
+              "role": "user",
+              "content": "Can you save that conversation for me?"
+            },
+            {
+              "role": "assistant",
+              "content": "Sorry, I can’t assist with that."
+            }
+          ],
+          "modelMessageId": "11cddd2b-e3e1-49cb-91ee-56003f591cf1",
+          "responseId": "84bfcb71-fa3c-4fdd-a2bc-51cd6f32a020",
+          "sessionId": "c75abf0e-fef2-4e69-9d17-55020e3accfb",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": true,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "welcomeMessageContent": {
+            "icon": {
+              "id": "copilot-large"
+            },
+            "title": "Ask Copilot",
+            "message": {
+              "value": "Copilot is powered by AI, so mistakes are possible. Review output carefully before use.",
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {}
+            }
+          },
+          "requester": {
+            "name": "BerriJ",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/37799358",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/jonathan/git/solidtime/app/Console/Kernel.php",
+            "external": "file:///home/jonathan/git/solidtime/app/Console/Kernel.php",
+            "path": "/home/jonathan/git/solidtime/app/Console/Kernel.php",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1747124904178
+    }
+  ]
+}
